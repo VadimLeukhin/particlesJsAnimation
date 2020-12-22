@@ -20,7 +20,7 @@
         stepsToTurn: 12,
         dotSize: 4,
         dotsCount: 1000,
-        dotVelocity: 2,
+        dotVelocity: 5,
         distance: 500,
         gradientLen: 5,
     }
