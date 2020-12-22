@@ -16,12 +16,12 @@
     const cfg = {
         hue: 0,
         bgFillColor: 'rgba(50, 50, 50, .01)',
-        dirsCount: 3,
-        stepsToTurn: 70,
+        dirsCount: 6,
+        stepsToTurn: cw > 992 ? 50 : 12,
         dotSize: 2,
         dotsCount: 300,
         dotVelocity: 2,
-        distance: 500,
+        distance: 250,
         gradientLen: 5,
     }
 
@@ -107,5 +107,4 @@
         requestAnimationFrame(loop);
     }
     loop();
-
 })();
