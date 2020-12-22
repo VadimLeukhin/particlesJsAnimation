@@ -18,10 +18,10 @@
         bgFillColor: 'rgba(50, 50, 50, .05)',
         dirsCount: 6,
         stepsToTurn: 12,
-        dotSize: 4,
+        dotSize: 6,
         dotsCount: 1000,
         dotVelocity: 5,
-        distance: 500,
+        distance: 2000,
         gradientLen: 5,
     }
 
