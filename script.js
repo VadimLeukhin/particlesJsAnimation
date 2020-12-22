@@ -19,7 +19,7 @@
         dirsCount: 6,
         stepsToTurn: 12,
         dotSize: 4,
-        dotsCount: 300,
+        dotsCount: 1000,
         dotVelocity: 2,
         distance: 500,
         gradientLen: 5,
