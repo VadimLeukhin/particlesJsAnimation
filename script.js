@@ -44,7 +44,7 @@
             let xy = Math.abs(this.pos.x - cx) + Math.abs(this.pos.y - cy);
             let makeHue = (cfg.hue + xy / cfg.gradientLen) % 360;
             let color = `hsl(${ makeHue }, 100%, 50%)`;
-            let size = cfg.dotSize - Math.sin(xy / 9) * 2 - Math.sin(xy / 2);
+            let size = cfg.dotSize - Math.sin(xy / 9) * 2 - Math.sin(xy / 4);
             let blur = cfg.dotSize - Math.sin(xy / 8) * 2;
             let x = this.pos.x - size / 2;
             let y = this.pos.y - size / 2;
