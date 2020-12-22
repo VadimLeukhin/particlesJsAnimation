@@ -21,7 +21,7 @@
         dotSize: 4,
         dotsCount: 300,
         dotVelocity: 2,
-        distance: 100,
+        distance: 500,
         gradientLen: 5,
     }
 
