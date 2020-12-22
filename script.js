@@ -15,13 +15,13 @@
 
     const cfg = {
         hue: 0,
-        bgFillColor: 'rgba(50, 50, 50, .05)',
-        dirsCount: 6,
-        stepsToTurn: 12,
-        dotSize: 8,
-        dotsCount: 1000,
-        dotVelocity: 5,
-        distance: 2000,
+        bgFillColor: 'rgba(50, 50, 50, .01)',
+        dirsCount: 3,
+        stepsToTurn: 70,
+        dotSize: 2,
+        dotsCount: 300,
+        dotVelocity: 2,
+        distance: 500,
         gradientLen: 5,
     }
 
@@ -36,7 +36,7 @@
     class Dot {
         constructor() {
             this.pos = {x: cx, y: cy};
-            this.dir = (Math.random() * 3 | 0) * 2;
+            this.dir = cfg.dirsCount === 6 ? (Math.random() * 3 | 0) * 2 : Math.random() * cfg.dirsCount | 0;
             this.step = 0;
         }
 
@@ -44,7 +44,7 @@
             let xy = Math.abs(this.pos.x - cx) + Math.abs(this.pos.y - cy);
             let makeHue = (cfg.hue + xy / cfg.gradientLen) % 360;
             let color = `hsl(${ makeHue }, 100%, 50%)`;
-            let size = cfg.dotSize - Math.sin(xy / 9) * 2 - Math.sin(xy / 4);
+            let size = cfg.dotSize;// - Math.sin(xy / 9) * 2 - Math.sin(xy / 2);
             let blur = cfg.dotSize - Math.sin(xy / 8) * 2;
             let x = this.pos.x - size / 2;
             let y = this.pos.y - size / 2;
