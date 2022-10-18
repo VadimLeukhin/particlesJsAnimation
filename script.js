@@ -16,7 +16,7 @@
     const cfg = {
         hue: 0,
         bgFillColor: 'rgba(50, 50, 50, .01)',
-        dirsCount: 6,
+        dirsCount: 8,
         stepsToTurn: cw > 992 ? 50 : 12,
         dotSize: 2,
         dotsCount: 300,
